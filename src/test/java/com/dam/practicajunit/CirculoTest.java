@@ -19,4 +19,12 @@ public class CirculoTest {
         assertEquals(5.0, c.getRadio());
     }
 
+    // CASO C: Método setRadio()
+    @Test
+    public void testSetRadio() {
+        Circulo c = new Circulo(3);
+        c.setRadio(10);
+        assertEquals(10.0, c.getRadio());
+    }
+
 }
