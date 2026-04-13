@@ -43,4 +43,12 @@ public class CirculoTest {
         assertEquals(esperado, c.calcularPerimetro(), 0.01);
     }
 
+    // CASO F: Método mostrarRadio()
+    @Test
+    public void testMostrarRadio() {
+        Circulo c = new Circulo(4);
+        String esperado = "El radio es: 4.0";
+        assertEquals(esperado, Circulo.mostrarRadio(c));
+    }
+
 }
