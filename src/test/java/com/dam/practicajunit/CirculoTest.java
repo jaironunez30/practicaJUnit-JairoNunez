@@ -35,4 +35,12 @@ public class CirculoTest {
         assertEquals(esperado, c.calcularArea(), 0.0);
     }
 
+    // CASO E: Método calcularPerimetro()
+    @Test
+    public void testCalcularPerimetro() {
+        Circulo c = new Circulo(2);
+        double esperado = 2 * Math.PI * 2;
+        assertEquals(esperado, c.calcularPerimetro(), 0.01);
+    }
+
 }
