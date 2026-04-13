@@ -27,4 +27,12 @@ public class CirculoTest {
         assertEquals(10.0, c.getRadio());
     }
 
+    // CASO D: Método calcularArea()
+    @Test
+    public void testCalcularArea() {
+        Circulo c = new Circulo(1);
+        double esperado = Math.PI * 1 * 1;
+        assertEquals(esperado, c.calcularArea(), 0.0);
+    }
+
 }
